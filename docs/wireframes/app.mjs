@@ -1,4 +1,4 @@
-import { games, screenSVG, storyboard } from './screens.mjs';
+import { games, screenSVG, storyboard } from './screens.mjs?v=2';
 const $ = id => document.getElementById(id);
 let index=0, state='browse', frameId=0, context, musicFailed=false;
 const music = new Audio('https://developers.openai.com/modretro/audio/ambient-chiptune-loop.mp3');
