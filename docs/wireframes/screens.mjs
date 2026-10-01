@@ -106,7 +106,7 @@ export function screenContent(state='browse',index=0,{muted=false,progress=0,off
     title.forEach((line,i)=>{s+=lettering(line,80,104+i*9,true);});
     s+=rect(8,123,144,1,c.mid)+lettering('A PLAY',10,131)+lettering('SELECT MUTE',87,131);
   } else if(state==='handoff') {
-    s+=lettering('DESIGN PREVIEW',80,18,true)+cart(index,32,8,.6);
+    s+=lettering('DESIGN PREVIEW',80,10,true)+cart(index,32,14,.6);
     s+=lettering('GAME STARTS HERE',80,82,true)+lettering('ROM NOT LOADED',80,96,true);
     s+=rect(8,119,144,1,c.mid)+lettering('B BACK TO SHELF',80,130,true);
   } else {
