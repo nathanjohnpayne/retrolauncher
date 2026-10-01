@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>RetroLauncher — design wireframes</title>
+  <link rel="stylesheet" href="wireframes/style.css">
+</head>
+<body>
+  <header><a class="wordmark" href="https://github.com/nathanjohnpayne/retrolauncher">RETROLAUNCHER ↗</a><span class="badge">DESIGN / 01</span></header>
+  <main>
+    <section class="intro"><p class="eyebrow">MODRETRO + CODEX COLLECTION</p><h1>A little shelf.<br>A satisfying click.</h1><p>Thirteen cartridges. One at a time. A proposed launcher for the Chromatic’s 160 × 144 screen.</p></section>
+    <section class="preview" aria-label="Interactive wireframe">
+      <div class="stage"><div class="screen-surround"><button id="screen" aria-label="Select cartridge"></button><span class="screen-caption">160 × 144 / PIXEL WIREFRAME</span></div></div>
+      <div class="panel"><p class="eyebrow">TRY THE INTERACTION</p><h2 id="game-title">FlapGPT</h2><p id="position">Cartridge 01 / 13</p><p id="status" role="status" aria-live="polite">Browse the shelf, then select a cartridge.</p>
+        <div class="controls"><button id="previous" aria-label="Previous cartridge">←</button><button id="play">A · Select</button><button id="next" aria-label="Next cartridge">→</button></div>
+        <button id="back" class="quiet">B · Back to shelf</button>
+        <div class="options"><label><input id="music" type="checkbox"> Original site music</label><label><input id="sound" type="checkbox" checked> Cartridge click</label><label><input id="motion" type="checkbox" checked> Animate insertion</label><label><input id="native" type="checkbox"> Actual pixel size (1×)</label></div>
+        <p class="hint">Keyboard: ← → browse · A / Enter select · B / Esc back · M music</p>
+        <p class="notice"><strong>Design preview.</strong> Label artwork is schematic. Selection demonstrates the loading sequence; it does not run a ROM.</p>
+        <p id="audio-status" class="hint">Music is off until you enable it.</p>
+      </div>
+    </section>
+    <section class="sequence"><div class="section-heading"><div><p class="eyebrow">THE 1.15 SECOND JOURNEY</p><h2>From shelf to slot.</h2></div><a href="wireframes/storyboard.svg">Open storyboard ↗</a></div><div id="frames" class="frames"></div></section>
+    <section class="status-section"><p class="eyebrow">CURRENT STATUS / SEPTEMBER 30, 2026</p><h2>The interaction is ready to review.<br>The native compilation is unresolved.</h2><p>The supplied games total 4.0625 MiB; the detected cartridge holds 4 MiB. Whole-game switching, save isolation, and returning from a game also need a supported implementation. Source projects and cartridge documentation have been requested from the OpenAI DevDay team.</p><a href="https://github.com/nathanjohnpayne/retrolauncher#current-status">Read project status ↗</a></section>
+  </main>
+  <footer><span>RETROLAUNCHER / UNOFFICIAL DESIGN PROTOTYPE</span><a href="https://developers.openai.com/modretro">Original collection ↗</a></footer>
+  <script type="module" src="wireframes/app.mjs"></script>
+</body>
+</html>
